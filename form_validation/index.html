@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sign  Up Today!</h1>
+        <!-- FORM -->
+        <form id="form">
+            <!-- FULL NAME -->
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Full Name" name="name"
+                required minlength="3" maxlength="100">
+            </div>
+            <!-- PHONE NUMBER -->
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="555-555-5555" name="phone"
+                required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            </div>
+            <!--EMAIL ADDRESS-->
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="email@address.com" name="email"
+                required>
+            </div>
+            <!-- WEBSITE URL-->
+            <div class="form-group">
+                <label for="website">Website URL</label>
+                <input type="url" id="website" placeholder="https://www.google.com" name="website"
+                required>
+            </div>
+            <!-- PASSWORD-->
+            <div class="form-group">
+                <label for="password1">Create Password(Min. 8 Characters)</label>
+                <input type="password" id="password1" placeholder="Create Password"
+                required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+                title="Please include one uppercase and one number."
+                >
+            </div>
+            <!-- CONFIRM PASSWORD-->
+            <div class="form-group">
+                <label for="password2">Confirm Password</label>
+                <input type="password" id="password2" placeholder="Confirm Password" name="password"
+                required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+                title="Please include one uppercase and one number."
+                >
+            </div>
+            <button type="submit">Register</button>
+        </form>
+        <!-- ERROR/SUCCESS MESSAGE-->
+        <div class="message-container">
+        <h3 id="message">Don't Hesitate!</h3>
+        </div>
+
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
