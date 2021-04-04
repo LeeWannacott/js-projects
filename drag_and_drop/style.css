@@ -8,7 +8,7 @@ html {
 :root {
   --column-1: #a2622d;
   --column-2: #1b6161;
-  --column-3: #187e18;
+  --column-3: #248224;
   --column-4: #a22d22;
 }
 
@@ -239,4 +239,3 @@ ul {
   .drag-column {
     margin: 10px;
   }
-}
